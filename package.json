@@ -1,0 +1,54 @@
+{
+  "name": "iamfast-core",
+  "version": "0.1.0",
+  "description": "AWS IAM policy generation from application code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "jsii",
+    "build:watch": "jsii --watch",
+    "package": "jsii-pacmak"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iann0036/iamfast-core.git"
+  },
+  "keywords": [
+    "aws",
+    "iam",
+    "ast"
+  ],
+  "author": "Ian Mckay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iann0036/iamfast-core/issues"
+  },
+  "homepage": "https://github.com/iann0036/iamfast-core#readme",
+  "stability": "experimental",
+  "types": "index.d.ts",
+  "jsii": {
+    "outdir": "dist",
+    "versionFormat": "full",
+    "targets": {
+      "java": {
+        "package": "com.iann0036.iamfast.core",
+        "maven": {
+          "groupId": "com.iann0036.iamfast",
+          "artifactId": "core"
+        }
+      },
+      "python": {
+        "distName": "iamfast-core",
+        "module": "iamfast_core"
+      },
+      "dotnet": {
+        "namespace": "IAMFast.IAMFastCore",
+        "packageId": "IAMFast.IAMFastCore"
+      }
+    }
+  },
+  "devDependencies": {
+    "jsii": "^1.25.0",
+    "jsii-pacmak": "^1.25.0"
+  }
+}
